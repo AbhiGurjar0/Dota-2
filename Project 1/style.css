@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Radiance;
+  src: url(./Fonts/radiance-semibold.ttf);
+}
+
+@font-face {
+  font-family: Reaver;
+  src: url(./Fonts/Reaver-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Reaver;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.page1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.Destruct-h1::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 10px;
+  width: 100px;
+  color: #ff6046;
+}
+
+.highlighted-text {
+  position: relative;
+  color: transparent;
+}
+
+.highlighted-text::after {
+  content: "MULTIPLAYER";
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  /* transform: translate(-90%, 100%); */
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.PlayforFree {
+  backdrop-filter: blur(50px);
+}
+
+/* .highlighted-text::before{
+  content: "MULTIPLAYER";
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  transform: translate(-89.5%, 69.9%);
+} */
+
+.page2Container {
+  background-image: url(./Resources/radiant_dire5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.page3container {
+  background-image: url(./Resources/heroes_mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page5 {
+  background-image: url(./Resources/4th\ page\ back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page6container {
+  background-image: url(./Resources/last\ image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.page4-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  pointer-events: none;
+  background: linear-gradient(to right, black 3%, transparent 30%, transparent 70%, black 98%);
+}
+
+
+.marq1 img:hover{
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+  scale: 1.3;
+}
+.game2 {
+  display: none;
+  border: 2px solid whitesmoke;
+}
+
+.game:hover .game1 {
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid whitesmoke;
+
+}
+
+.game:hover .game2 {
+  display: block;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.game2 h3:hover {
+  left: 5;
+}
+
+.page1-overlay {
+  transition: 1s;
+  animation: slide 2s ease forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-350px);
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.box-1:hover .box-con {
+  top: 90px;
+
+
+}
+
+.box-2:hover .box-con {
+  top: 10px;
+
+
+}
+.box-3:hover .box-con {
+  top: 30px;
+
+
+}
+
+.box:hover {
+  border-color: red;
+  scale:1.05;
+
+}
